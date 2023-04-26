@@ -1,0 +1,145 @@
+@font-face {
+    font-family: poppins;
+    src: url("./fonts/Poppins/Poppins-Medium.ttf");
+}
+body{
+    min-width: 350px !important;
+    user-select: none !important;
+}
+.main{
+    height: 100vh;
+    min-height: 100vh;
+    background-color: rgb(212, 212, 212);
+
+
+}
+.calculatorBody{
+
+    min-height: 500px;
+    max-height: 500px;
+    max-width: 320px;
+    min-width: 320px;
+    background-color:#F3F3F3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+
+}
+.calculatorScreen{
+    height: 150px;
+
+}
+.menu{
+    height: 50px;
+}
+.title{
+    width: 150px;
+    /* background-color: aliceblue; */
+    color: rgb(78, 58, 58);
+}
+.icons{
+    width: 100px;
+    /* background-color: aliceblue; */
+    color: rgb(44, 39, 39);
+
+}
+.title img, .icons img{
+    width: 25px;
+    height: 25px;
+    /* background-color: aliceblue; */
+}
+.icons img{
+    width: 20px;
+    height: 20px;
+    /* background-color: aliceblue; */
+}
+.heading{
+    margin-left: 20px;
+    color: rgb(44, 39, 39);
+
+}
+.inputScreenBox {
+    height: 100px;
+    position: relative;
+}
+.inputScreenBox input{
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    /* direction: rtl; */
+    text-align: end;
+    font-family: poppins;
+    font-size: 35px;
+    caret-color: transparent;
+    border: none;
+    color: rgb(44, 39, 39);
+    background-color: #F3F3F3;
+    /* user-select: none; */
+    /* pointer-events: none; */
+}
+
+.inputScreenBox input:focus{
+
+border: 0;outline: 0;
+}
+
+
+.tempResultWindow{
+    color: rgb(61, 58, 58) !important;
+    text-align: right;
+    background-color: #F3F3F3 !important;
+    border: 0;
+    outline: 0;
+    margin: 0;
+    
+
+    padding-right: 20px !important;
+}
+
+.calculatorKeyPad{
+    width: 100%;
+    height: calc(100% - 220px);
+}
+.calculatorButton{
+    
+    max-width: 72px;
+    min-width: 72px;
+    min-height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.calculatorButton.equals{
+    max-width: 148px;
+    min-width: 148px;
+    background-color: rgb(53, 53, 145);
+    color: white;
+    border: 0;
+}
+.calculatorButton.equals:hover{
+    
+    background-color: rgb(44, 44, 121);
+    
+}
+.calculatorKeyPadRow{
+    height: 50px;
+    width: 100%;
+    margin: 0 auto !important;
+    /* background-color: gray !important; */
+    min-height: 50px;
+}
+
+
+
+
+.input-container {
+    position: relative;
+  }
+  
+  .input-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+  }
